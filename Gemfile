@@ -1,4 +1,4 @@
-ruby '2.6.2'
+ruby '3.0.0'
 source "https://rubygems.org"
 
 gem 'rubocop'
@@ -12,13 +12,8 @@ gem 'sinatra-contrib'
 
 gem 'rake'
 gem 'sinatra-activerecord'
-gem 'activerecord' , '5.2.3'
+gem 'activerecord'
 gem 'bcrypt'
 
-group :development do
-  gem 'sqlite3' , '1.4.1'
-end
-
-group :production do
-  gem 'pg' , '0.21.0'
-end
+gem 'pg'
+gem 'webrick'
